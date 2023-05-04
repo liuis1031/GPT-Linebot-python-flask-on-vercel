@@ -23,7 +23,6 @@ class ChatGPT:
             frequency_penalty=self.frequency_penalty,
             presence_penalty=self.presence_penalty,
             max_tokens=self.max_tokens
-            use_chat_api=True
         )
         return response['choices'][0]['text'].strip()
 
