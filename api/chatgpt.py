@@ -24,7 +24,7 @@ class ChatGPT:
             presence_penalty=self.presence_penalty,
             max_tokens=self.max_tokens
         )
-        return response['choices'][0]['message']['content'].strip()
+        return response['choices'][0]['message']['text'].strip()
 
     def add_msg(self, text):
         self.prompt.add_msg(text)
